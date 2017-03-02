@@ -1,4 +1,4 @@
-package mvcTest;
+package myTest;
 //贪吃蛇游戏源码
 public class TCSnake {
 	public static void main(String[] args){
