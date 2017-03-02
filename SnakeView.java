@@ -22,11 +22,11 @@ public class SnakeView implements Observer{
 	public SnakeView(SnakeModel model,SnakeControl control){
 		this.model = model;
 		this.control = control;
-		mainFrame = new JFrame("GreedSnake");//本来是‘ GreedSnake’
+		mainFrame = new JFrame("GreedSnake");
 		Container cp = mainFrame.getContentPane();
 		
 		//创建顶部的分数显示
-		labelScore = new JLabel("Score:");//本来是'Score:'
+		labelScore = new JLabel("Score:");
 		cp.add(labelScore,BorderLayout.NORTH);
 		
 		//创建中间的游戏显示区域
@@ -35,7 +35,7 @@ public class SnakeView implements Observer{
 		paintCanvas.addKeyListener(control);
 		cp.add(paintCanvas,BorderLayout.CENTER);
 		
-		//创建底下的帮助栏
+		//创建帮助栏
 		JPanel panelButtom = new JPanel();
 		
 		panelButtom.setLayout(new BorderLayout());
